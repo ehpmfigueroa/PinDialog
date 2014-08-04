@@ -108,8 +108,9 @@ public class PinDialog extends CordovaPlugin {
                         }
                     });
 
-                    dlg.create();
-                    dlg.show();
+                    AlertDialog dialog = dlg.create();
+                    dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+                    dialog.show();
 
                 };
             };
